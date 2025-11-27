@@ -1,10 +1,155 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
+<title>Jujutsu Chronicles</title>
 
-
-<title>Jujutsu Kaisen</title>
-
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+    
+    
+    body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e0e10;
+    color: #f5f5f5;
+    line-height: 1.6;
+    }
+    
+    
+    
+    nav {
+    
+    position: fixed;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.9);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 15px 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+    }
+    
+    nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease;
+    }
+    
+    
+    nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #e63946, #ffcc00);
+    transition: left 0.4s ease;
+    }
+    
+    
+    nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+    }
+    
+    
+    nav a:hover::before {
+    left: 0;
+    }
+    
+    
+    nav a.active::before {
+    left: 0;
+    }
+    
+    
+    
+    header {
+    background: url('https://images7.alphacoders.com/115/1157753.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+    }
+    
+    header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px #000;
+    }
+    
+    
+    header p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    }
+    
+    
+    section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: fadeUp 1s ease-in-out;
+    }
+    
+    
+    h2 {
+    color: #e63946;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e63946;
+    display: inline-block;
+    padding-bottom: 5px;
+    }
+    
+    
+    footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    }
+    
+    
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+    
+    
+    @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+    
+    
+    
+    @keyframes glow {
+    0% { text-shadow: 0 0 5px #e63946, 0 0 10px #ffcc00; }
+    50% { text-shadow: 0 0 20px #ffcc00, 0 0 30px #e63946; }
+    100% { text-shadow: 0 0 5px #e63946, 0 0 10px #ffcc00; }
+    }
+    
+    
+    nav a.active {
+    animation: glow 2s infinite alternate;
+    }
+    </style>
 </head>
 
 
@@ -19,11 +164,12 @@
 
 
 <nav>
-<a href="#plot">Plot/Story!</a>
-<a href="#timeline">Timeline?</a>
-<a href="#main">Main Characters!</a>
-<a href="#side">Side Characactes!</a>
-<a href="#info">Info</a>
+<a href="homepage">Home</a>
+<a href="#plot">Lore</a>
+<a href="#timeline">Timeline</a>
+<a href="#main">Characters</a>
+<a href="#side">Mini Games</a>
+<a href="#info">About Us</a>
 </nav>
 
 
@@ -32,7 +178,8 @@
 <p>blah lbeh blii bloo blap.</p>
 </header>
 
-
+<section id="homepage">
+</section>
 
 
 
@@ -101,159 +248,6 @@
 
 
 
-
-<style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-scroll-behavior: smooth;
-}
-
-
-body {
-font-family: 'Poppins', sans-serif;
-background-color: #0e0e10;
-color: #f5f5f5;
-line-height: 1.6;
-}
-
-
-
-nav {
-position: fixed;
-width: 100%;
-background-color: rgba(17, 17, 17, 0.9);
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 15px 0;
-top: 0;
-left: 0;
-z-index: 1000;
-box-shadow: 0 2px 5px rgba(0,0,0,0.4);
-backdrop-filter: blur(8px);
-}
-
-nav a {
-color: #f5f5f5;
-text-decoration: none;
-margin: 0 20px;
-font-weight: bold;
-position: relative;
-overflow: hidden;
-transition: color 0.4s ease;
-}
-
-
-nav a::before {
-content: "";
-position: absolute;
-bottom: 0;
-left: -100%;
-width: 100%;
-height: 3px;
-background: linear-gradient(90deg, #e63946, #ffcc00);
-transition: left 0.4s ease;
-}
-
-
-nav a:hover {
-color: #ffcc00;
-transform: scale(1.1);
-}
-
-
-nav a:hover::before {
-left: 0;
-}
-
-
-nav a.active::before {
-left: 0;
-}
-
-
-
-header {
-background: url('https://images7.alphacoders.com/115/1157753.jpg') center/cover no-repeat;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-color: #fff;
-animation: fadeIn 2s ease-in-out;
-}
-
-header h1 {
-font-size: 3rem;
-text-shadow: 2px 2px 8px #000;
-}
-
-
-header p {
-font-size: 1.3rem;
-margin-top: 10px;
-}
-
-
-section {
-padding: 80px 20px;
-max-width: 1000px;
-margin: 0 auto;
-animation: fadeUp 1s ease-in-out;
-}
-
-
-h2 {
-color: #e63946;
-margin-bottom: 15px;
-border-bottom: 2px solid #e63946;
-display: inline-block;
-padding-bottom: 5px;
-}
-
-
-footer {
-background-color: #111;
-text-align: center;
-padding: 20px;
-color: #aaa;
-}
-
-
-@keyframes fadeIn {
-from { opacity: 0; }
-to { opacity: 1; }
-}
-
-
-@keyframes fadeUp {
-from { opacity: 0; transform: translateY(20px); }
-to { opacity: 1; transform: translateY(0); }
-}
-
-
-
-@keyframes glow {
-0% { text-shadow: 0 0 5px #e63946, 0 0 10px #ffcc00; }
-50% { text-shadow: 0 0 20px #ffcc00, 0 0 30px #e63946; }
-100% { text-shadow: 0 0 5px #e63946, 0 0 10px #ffcc00; }
-}
-
-
-nav a.active {
-animation: glow 2s infinite alternate;
-}
-
-
-
-
-
 /* I was gonna make the navbar redirect to the topics' own websites, but rn I focused on the animation and design of the navbar yooooo */
 /* I stil havent made the websites for each topic yet and also ill try researching or working on how to do the mini games maybe */
-
-</style>
 </html>
