@@ -15,23 +15,34 @@
 
         header {
             margin: auto;
-            height: 50vh;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            height: 100px;
         }
 
         .character-grid {
+            width: 100%;
             display: flex;
             justify-content: center;
-            flex-direction: row;
+            align-items: center;
+            padding: 40px 0;
             gap: 20px;
-            unicode-bidi: isolate;
-            size: 50px;
-            border: 1px;
-            border-radius: 10px;
         }
 
         a {
         cursor: pointer;
         text-decoration: underline;
+        }
+
+        .character-grid img {
+            width: 70px;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            margin-bottom: 0;
+            margin-top: auto;
         }
     </style>
 </head>
@@ -51,10 +62,12 @@
 
     <section class="jjk characters">
         <div class="characters-grid">
-            <a href="char_protagonist.html">Protagonists</a>
-                <img src="assets/protagonist.jpg" alt="Protagonist Image">
-            <a href="char_antagonist.html">Antagonists</a>
-                <img src="assests/antagonist.jpg" alt="Antagonist Image">
+            <a href="char_protagonist.html" class="chr">
+                <img src="assets/protagonist.jpg" alt="Protagonist Image" style="width:400px;">
+            </a>
+                <a href="char_antagonist.html" class="chr">
+                <img src="antagonist.jpg" alt="Antagonist Image" style="width:400px;">
+            </a>
         </div>
     </section>
 

@@ -60,10 +60,6 @@ nav a:hover::before {
     left:0;
 }
 
-nav a.active::before {
-    left:0;
-}
-
 nav a.active {
     animation: glow 2s infinite alternate;
 }
@@ -95,14 +91,14 @@ header p {
 }
 
 footer {
-    background-color: #111;
+    background-color: #eeeded;
     text-align: center;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 20px;
     margin-top: auto;
-    color: #ffffff;
+    color: #1c0f0f;
 }
 
 .comic-relief-regular {
