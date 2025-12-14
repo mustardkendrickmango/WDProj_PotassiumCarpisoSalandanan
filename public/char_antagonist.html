@@ -1,259 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Jujutsu Chronicles</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Sekuya&display=swap" rel="stylesheet">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jujutsu Chronicles</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../char-antagonist.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Sekuya&display=swap" rel="stylesheet">
+    </head>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <body>
+        <div class="page-container">
+        <nav>
+            <a href="../index.html" class="home-lenk">Home 🏠︎</a>
+            <a href="lore.html">Lore</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="characters.html">Characters</a>
+            <a href="mini_games.html">Mini Games</a>
+            <a href="about_us.html">About Us</a>
+        </nav>
 
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
+        <main>
+            <header>
+                <h2>Antagonists</h2>
+            </header>
 
-        body {
-            display: flex;
-            flex-direction: column;
-            font-family: 'Comic Relief', sans-serif;
-            color: white;
-            padding: 40px;
-        }
+            <section class="characters">
 
-        nav {
-            display: flex;
-            gap: 20px;
-        }
+                <div class="protagonist-gallery">
 
-        .home-lenk {
-            margin-right: auto;
-        }
-
-        main {
-            flex: 1;
-        }
-
-        header {
-            margin-top: 40px;
-            margin-bottom: 20px;
-            height: 60px;
-            font-family: 'Sekuya', sans-serif;
-            font-size: 30px;
-        }
-
-        .page-container {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .characters {
-            max-width: 1000px;
-            margin: 0 auto;
-            flex: 1;
-        }
-
-        .protagonist-gallery {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            margin-bottom: 20px;
-        }
-
-        .chr-card {
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .character {
-            width: 150px;
-            border-radius: 12px;
-            border: 1px solid #aaa;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .character:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 25px rgba(255,255,255,0.25);
-        }
-
-        .info-panel {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #f6e4fd;
-            border-radius: 12px;
-            overflow: hidden;
-            max-height: 0;
-            opacity: 0;
-            padding: 0 24px;
-            transition: max-height 0.45s ease, opacity 0.3s ease;
-        }
-
-        .info-panel.show {
-            max-height: 400px;
-            opacity: 1;
-            padding: 24px;
-        }
-
-        .info-panel h2 {
-            margin-top: 0;
-            color: #222;
-        }
-
-        .info-panel p {
-            color: #222;
-            line-height: 1.6;
-            margin: 4px 0;
-        }
-
-        .backbtn {
-                cursor: pointer;
-                text-decoration: none;
-                font-family: 'Comic-Relief', sans-serif;
-                font-size: 18px;
-                color:#dfdddd;
-                margin-left:50px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="page-container">
-    <nav>
-        <a href="../index.html" class="home-lenk">Home 🏠︎</a>
-        <a href="lore.html">Lore</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="characters.html">Characters</a>
-        <a href="mini_games.html">Mini Games</a>
-        <a href="about_us.html">About Us</a>
-    </nav>
-
-    <main>
-        <header>
-            <h2>Protagonists</h2>
-        </header>
-
-        <section class="characters">
-
-            <div class="protagonist-gallery">
-
-                <div class="chr-card">
-                    <img src="assets/sukuna.jpg" class="character" alt="Sukuna">
-
-                    <div class="chr-info" hidden>
-                        <h3>Itadori Yuji</h3>
-                        <div class="info-content">
-                            <p><strong>Birthday:</strong> March 20</p>
-                            <p><strong>Age:</strong> 15</p>
-                            <p><strong>Occupation:</strong> Jujutsu Sorcerer</p>
-                            <p><strong>Affiliation:</strong> Tokyo Jujutsu High</p>
-                            <p><strong>Abilities:</strong> Superhuman strength, Sukuna vessel</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="chr-card">
-                    <img src="assets/kennyboi.jpg" class="character" alt="Kenjaku">
-
-                    <div class="chr-info" hidden>
-                        <h3>Fushiguro Megumi</h3>
-                        <div class="info-content">
-                            <p><strong>Birthday:</strong> December 22</p>
-                            <p><strong>Age:</strong> 15</p>
-                            <p><strong>Occupation:</strong> Jujutsu Sorcerer</p>
-                            <p><strong>Affiliation:</strong> Tokyo Jujutsu High</p>
-                            <p><strong>Abilities:</strong> Ten Shadows Technique</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="chr-card">
-                    <img src="assets/mahito.jpg" class="character" alt="Mahito">
-
-                    <div class="chr-info" hidden>
-                        <h3>Kugisaki Nobara</h3>
-                        <div class="info-content">
-                            <p><strong>Birthday:</strong> August 7</p>
-                            <p><strong>Age:</strong> 16</p>
-                            <p><strong>Occupation:</strong> Jujutsu Sorcerer</p>
-                            <p><strong>Affiliation:</strong> Tokyo Jujutsu High</p>
-                            <p><strong>Abilities:</strong> Straw Doll Technique</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="chr-card">
-                        <img src="assets/toji.jpg" class="character" alt="Toji">
+                    <div class="chr-card">
+                        <img src="assets/sukuna.jpg" class="character" alt="Sukuna">
 
                         <div class="chr-info" hidden>
-                            <h3>Fushiguro Toji</h3>
                             <div class="info-content">
-                                <p><strong>Birthday:</strong> December 7</p>
-                                <p><strong>Age:</strong> 28</p>
-                                <p><strong>Occupation:</strong> Jujutsu Sorcerer</p>
-                                <p><strong>Affiliation:</strong> Tokyo Jujutsu High</p>
-                                <p><strong>Abilities:</strong> Limitless, Six Eyes</p>
+
+                                <div class="id-layout">
+
+                                    <div class="id-pic">
+                                        <img src="assets/yujiID.jpg" alt="Itadori ID photo">
+                                    </div>
+
+                                    <div class="id-details">
+                                        <div class="id-header">
+                                            <img src="assets/tjh.jpg" class="logo" alt="tokyo jujutsu high">
+                                            <h3>Tokyo Metropolitan College of Jujutsu</h3>
+                                        </div>
+                                        <p><strong>Name:</strong> Itadori Yuji</p>
+                                        <p><strong>Birthday:</strong> March 20, 2002</p>
+                                        <p><strong>Occupation:</strong> Jujutsu Sorcerer, Student</p>
+                                        <p><strong>Abilities:</strong> Sukuna's vessel, Blood Manipulation, Black Flash, Hometown Domain</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-            </div>
 
-            <div id="info-panel" class="info-panel">
-                <h2 id="char-name"></h2>
-                <div id="char-desc"></div>
-            </div>
+                    <div class="chr-card">
+                        <img src="assets/mahito.jpg" class="character" alt="Mahito">
 
-        </section>
-    </main>
+                        <div class="chr-info" hidden>
+                            <div class="info-content">
 
-    <a href="characters.html" class="backbtn">◀️BACK</a>
+                                <div class="id-layout">
 
-    <footer>
-        <p>© 2025 C. Carpiso, T. Salandanan</p>
-        <a href="sources.html">Sources</a>
-    </footer>
-    </div>
-        <script>
-        const cards = document.querySelectorAll(".chr-card");
-        const panel = document.getElementById("info-panel");
-        const title = document.getElementById("char-name");
-        const content = document.getElementById("char-desc");
+                                    <div class="id-pic">
+                                        <img src="assets/megumiID.jpg" alt="Fushiguro ID photo">
+                                    </div>
 
-        let activeCard = null;
+                                    <div class="id-details">
+                                        <div class="id-header">
+                                            <img src="assets/tjh.jpg" class="logo" alt="tokyo jujutsu high">
+                                            <h3>Tokyo Metropolitan College of Jujutsu</h3>
+                                        </div>
+                                        <p><strong>Name:</strong> Fushiguro Megumi</p>
+                                        <p><strong>Birthday:</strong> December 22, 2002</p>
+                                        <p><strong>Occupation:</strong> Jujutsu Sorcerer, Student</p>
+                                        <p><strong>Abilities:</strong> 10 Shadows Technique, Chimera Shadow Garden</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        cards.forEach(card => {
-            card.addEventListener("click", () => {
-                const info = card.querySelector(".chr-info");
+                    <div class="chr-card">
+                        <img src="assets/kennyboi.jpg" class="character" alt="Kenjaku">
 
-                if (activeCard === card) {
-                    panel.classList.remove("show");
-                    activeCard = null;
-                    return;
-                }
+                        <div class="chr-info" hidden>
+                            <div class="info-content">
 
-                title.textContent = info.querySelector("h3").textContent;
-                content.innerHTML = info.querySelector(".info-content").innerHTML;
+                                <div class="id-layout">
 
-                panel.classList.add("show");
-                activeCard = card;
+                                    <div class="id-pic">
+                                        <img src="assets/nobaraID.jpg" alt="Kugisaki ID photo">
+                                    </div>
 
-                panel.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-            });
-        });
-        </script>
-</body>
-</html>
+                                    <div class="id-details">
+                                        <div class="id-header">
+                                            <img src="assets/tjh.jpg" class="logo" alt="tokyo jujutsu high">
+                                            <h3>Tokyo Metropolitan College of Jujutsu</h3>
+                                        </div>
+                                        <p><strong>Name:</strong> Kugisaki Nobara</p>
+                                        <p><strong>Birthday:</strong> August 7, 2002</p>
+                                        <p><strong>Occupation:</strong> Jujutsu Sorcerer, Student</p>
+                                        <p><strong>Abilities:</strong> Straw Doll Technique</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chr-card">
+                        <img src="assets/toji.jpg" class="character" alt="Toji">
+
+                        <div class="chr-info" hidden>
+                            <div class="info-content">
+
+                                <div class="id-layout">
+
+                                    <div class="id-pic">
+                                        <img src="assets/gojoID.jpg" alt="Gojo ID photo">
+                                    </div>
+
+                                    <div class="id-details">
+                                        <div class="id-header">
+                                            <img src="assets/tjh.jpg" class="logo" alt="tokyo jujutsu high">
+                                            <h3>Tokyo Metropolitan College of Jujutsu</h3>
+                                        </div>
+                                        <p><strong>Name:</strong> Gojo Satoru</p>
+                                        <p><strong>Birthday:</strong> December 7, 1989</p>
+                                        <p><strong>Occupation:</strong> Jujutsu Sorcerer, Teacher</p>
+                                        <p><strong>Abilities:</strong> Limitless, Six Eyes, Unlimited Void</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+
+                </div>
+
+                <div id="info-panel" class="info-panel">
+                    <div id="char-desc"></div>
+                </div>
+
+            </section>
+        </main>
+
+        <a href="characters.html" class="backbtn">◀️BACK</a>
+
+        <footer>
+            <p>© 2025 C. Carpiso, T. Salandanan</p>
+            <a href="sources.html">Sources</a>
+        </footer>
+
+        <script src="../character-profile.js"></script>
+        </div>
+    </body>
+    </html>
