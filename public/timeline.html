@@ -1,40 +1,501 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <title>Jujutsu Chronicles</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Sekuya&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Sekuya&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        .home-lenk{
-            margin-right:auto;
-        }
-
-        header {
+      header {
             margin: auto;
-            height: 50vh;
-        }
+            margin-top: 80px;
+            margin-bottom: 30px;
+            height: 100px;
+      }
+
+      body {
+        font-family: "Comic Relief", sans-serif;
+      }
+
+      .home-lenk {
+        margin-right: auto;
+      }
+
+      /* ---------- ACCORDION ---------- */
+
+      .accordion {
+        margin: 20px auto;
+        width: 75em;
+        background: #1b1b1b;
+        border: 2px solid #858585;
+        border-radius: 8px;
+      }
+
+      .accordion-trigger {
+        width: 100%;
+        padding: 1em 1.5em;
+        background: none;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        text-align: left;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .accordion-trigger:hover {
+        background: #343434;
+      }
+
+      .accordion-icon {
+        position: absolute;
+        right: 2em;
+        top: 50%;
+        width: 0.5rem;
+        height: 0.5rem;
+        border: solid currentcolor;
+        border-width: 0 2px 2px 0;
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      .accordion-trigger[aria-expanded="true"] .accordion-icon {
+        transform: translateY(-50%) rotate(-135deg);
+      }
+
+      .accordion-panel {
+        padding: 1.5em;
+        color: white;
+      }
+
+      .accordion-panel[hidden] {
+        display: none;
+      }
+
+      /* ---------- SLIDER ---------- */
+
+      .slider {
+        position: relative;
+        max-width: 600px;
+        margin: 20px auto;
+        overflow: hidden;
+      }
+
+      .slides img {
+        display: none;
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .slides img.active {
+        display: block;
+      }
+
+      .slider button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        padding: 10px 14px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      .slider .prev {
+        left: 10px;
+      }
+
+      .slider .next {
+        right: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <nav>
-        <a href="../index.html" class = "home-lenk">Home 🏠︎</a>
-        <a href="lore.html">Lore</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="characters.html">Characters</a>
-        <a href="mini_games.html">Mini Games</a>
-        <a href="about_us.html">About Us</a>
+      <a href="../index.html" class="home-lenk">Home 🏠︎</a>
+      <a href="lore.html">Lore</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="characters.html">Characters</a>
+      <a href="mini_games.html">Mini Games</a>
+      <a href="about_us.html">About Us</a>
     </nav>
 
     <header>
-        <h1>Timeline</h1>
+      <h1>Timeline</h1>
     </header>
 
+    <main>
+      <!-- 1 -->
+      <div class="accordion">
+        <h3>
+          <button
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="sect1"
+            id="acc1"
+          >
+            HIDDEN INVENTORY / PREMATURE DEATH ARC
+            <span class="accordion-icon"></span>
+          </button>
+        </h3>
+        <div
+          id="sect1"
+          class="accordion-panel"
+          role="region"
+          aria-labelledby="acc1"
+          hidden
+        >
+          <p><strong>Identifier:</strong> Hidden Inventory Arc</p>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="assets/hiddeninventoryslider/hiddeninventory1.jpg" class="active" alt="hidden inventory image 1"/>
+              <img src="assets/hiddeninventoryslider/hiddeninventory2.jpg" alt="hidden inventory image 2">
+              <img src="assets/hiddeninventoryslider/hiddeninventory3.jpg" alt="hidden inventory image 3">
+              <img src="assets/hiddeninventoryslider/hiddeninventory4.jpg" alt="hidden inventory image 4">
+              <img src="assets/hiddeninventoryslider/hiddeninventory5.jpg" alt="hidden inventory image 5">
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="accordion">
+        <h3>
+          <button
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="sect2"
+            id="acc2"
+          >
+            CURSED CHILD ARC
+            <span class="accordion-icon"></span>
+          </button>
+        </h3>
+        <div
+          id="sect2"
+          class="accordion-panel"
+          role="region"
+          aria-labelledby="acc2"
+          hidden
+        >
+          <p><strong>Identifier:</strong> Cursed Child Arc</p>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="assets/cursedchildslider/cursedchild1.jpg" class="active" alt="cursed child image 1"/>
+              <img src="assets/cursedchildslider/cursedchild2.jpg" alt="cursed child image 2"/>
+              <img src="assets/cursedchildslider/cursedchild3.jpg" alt="cursed child image 3"/>
+              <img src="assets/cursedchildslider/cursedchild4.jpg" alt="cursed child image 4"/>
+              <img src="assets/cursedchildslider/cursedchild2.jpg" alt="cursed child image 5"/>
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="accordion">
+        <h3>
+          <button
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="sect3"
+            id="acc3"
+          >
+            FEARSOME WOMB ARC
+            <span class="accordion-icon"></span>
+          </button>
+        </h3>
+        <div
+          id="sect3"
+          class="accordion-panel"
+          role="region"
+          aria-labelledby="acc3"
+          hidden
+        >
+          <p><strong>Identifier:</strong> Fearsome Womb Arc</p>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="images/arc3-1.jpg" class="active" alt="Arc 3 image 1" />
+              <img src="images/arc3-2.jpg" alt="Arc 3 image 2" />
+              <img src="images/arc3-3.jpg" alt="Arc 3 image 3" />
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="accordion">
+        <h3>
+          <button
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="sect4"
+            id="acc4"
+          >
+            VS. MAHITO ARC
+            <span class="accordion-icon"></span>
+          </button>
+        </h3>
+        <div
+          id="sect4"
+          class="accordion-panel"
+          role="region"
+          aria-labelledby="acc4"
+          hidden
+        >
+          <p><strong>Identifier:</strong> Vs. Mahito Arc</p>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="images/arc4-1.jpg" class="active" alt="Arc 4 image 1" />
+              <img src="images/arc4-2.jpg" alt="Arc 4 image 2" />
+              <img src="images/arc4-3.jpg" alt="Arc 4 image 3" />
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="accordion">
+        <h3>
+          <button
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="sect5"
+            id="acc5"
+          >
+            SHIBUYA INCIDENT ARC
+            <span class="accordion-icon"></span>
+          </button>
+        </h3>
+        <div
+          id="sect5"
+          class="accordion-panel"
+          role="region"
+          aria-labelledby="acc"
+          hidden
+        >
+          <p><strong>Identifier:</strong> Shibuya Incident Arc</p>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="images/arc7-1.jpg" class="active" alt="Arc 5 image 1" />
+              <img src="images/arc7-2.jpg" alt="Arc 5 image 2" />
+              <img src="images/arc7-3.jpg" alt="Arc 5 image 3" />
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="accordion">
+        <h3>
+          <button
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="sect6"
+            id="acc6"
+          >
+            ITADORI'S EXTERMINATION ARC
+            <span class="accordion-icon"></span>
+          </button>
+        </h3>
+        <div
+          id="sect6"
+          class="accordion-panel"
+          role="region"
+          aria-labelledby="acc6"
+          hidden
+        >
+          <p><strong>Identifier:</strong> Itadori’s Extermination Arc</p>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="images/arc8-1.jpg" class="active" alt="Arc 6 image 1" />
+              <img src="images/arc8-2.jpg" alt="Arc 6 image 2" />
+              <img src="images/arc8-3.jpg" alt="Arc 6 image 3" />
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="accordion">
+        <h3>
+          <button
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="sect7"
+            id="acc7"
+          >
+            PERFECT PREPARATION ARC
+            <span class="accordion-icon"></span>
+          </button>
+        </h3>
+        <div
+          id="sect7"
+          class="accordion-panel"
+          role="region"
+          aria-labelledby="acc7"
+          hidden
+        >
+          <p><strong>Identifier:</strong> Perfect Preparation Arc</p>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="images/arc9-1.jpg" class="active" alt="Arc 7 image 1" />
+              <img src="images/arc9-2.jpg" alt="Arc 7 image 2" />
+              <img src="images/arc9-3.jpg" alt="Arc 7 image 3" />
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="accordion">
+        <h3>
+          <button
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="sect8"
+            id="acc8"
+          >
+            CULLING GAME ARC
+            <span class="accordion-icon"></span>
+          </button>
+        </h3>
+        <div
+          id="sect8"
+          class="accordion-panel"
+          role="region"
+          aria-labelledby="acc8"
+          hidden
+        >
+          <p><strong>Identifier:</strong> Culling Game Arc</p>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="images/arc10-1.jpg" class="active" alt="Arc 8 image 1" />
+              <img src="images/arc10-2.jpg" alt="Arc 8 image 2" />
+              <img src="images/arc10-3.jpg" alt="Arc 8 image 3" />
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="accordion">
+        <h3>
+          <button
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="sect9"
+            id="acc9"
+          >
+            SHINJUKU SHOWDOWN ARC
+            <span class="accordion-icon"></span>
+          </button>
+        </h3>
+        <div
+          id="sect9"
+          class="accordion-panel"
+          role="region"
+          aria-labelledby="acc9"
+          hidden
+        >
+          <p><strong>Identifier:</strong> Shinjuku Showdown Arc</p>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="images/arc11-1.jpg" class="active" alt="Arc 9 image 1" />
+              <img src="images/arc11-2.jpg" alt="Arc 9 image 2" />
+              <img src="images/arc11-3.jpg" alt="Arc 9 image 3" />
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer>
-        <p>© 2025 C. Carpiso, T. Salandanan</p>
-        <a href="sources.html">Sources</a>
+      <p>© 2025 C. Carpiso, T. Salandanan</p>
+      <a href="sources.html">Sources</a>
     </footer>
-</body>
+
+    <script>
+"use strict";
+
+/* ACCORDION */
+document.querySelectorAll(".accordion h3").forEach((header) => {
+  const button = header.querySelector("button");
+  const panel = document.getElementById(
+    button.getAttribute("aria-controls")
+  );
+
+  button.addEventListener("click", () => {
+    const expanded = button.getAttribute("aria-expanded") === "true";
+
+    if (expanded) {
+      button.setAttribute("aria-expanded", "false");
+      panel.setAttribute("hidden", "");
+    } else {
+      button.setAttribute("aria-expanded", "true");
+      panel.removeAttribute("hidden");
+
+      // Initialize slider when accordion opens
+      const slider = panel.querySelector(".slider");
+      if (slider) {
+        const slides = slider.querySelectorAll("img");
+        slides.forEach((img) => img.classList.remove("active"));
+        if (slides.length > 0) slides[0].classList.add("active");
+      }
+    }
+  });
+});
+
+/* SLIDER */
+document.querySelectorAll(".slider").forEach((slider) => {
+  let index = 0;
+  const slides = slider.querySelectorAll("img");
+  const prev = slider.querySelector(".prev");
+  const next = slider.querySelector(".next");
+
+  function showSlide(i) {
+    slides.forEach((img) => img.classList.remove("active"));
+    slides[i].classList.add("active");
+  }
+
+  prev.addEventListener("click", () => {
+    index = index === 0 ? slides.length - 1 : index - 1;
+    showSlide(index);
+  });
+
+  next.addEventListener("click", () => {
+    index = index === slides.length - 1 ? 0 : index + 1;
+    showSlide(index);
+  });
+});
+    </script>
+  </body>
+</html>
