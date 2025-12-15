@@ -23,33 +23,44 @@
         <h1>Mini Game</h1>
     </header>
 
+    <div class="game-sect">
     <div class="game-overview">
         <h2>The Very Hungry Spirit Worm</h2>
-        <div class="overview">
-        <div class="instructions">
-            <h3>Instructions</h3>
-            <p>Toji's cursed spirit worm is very hungry! He hasn't eaten since Toji left him.</p>
-            <p>Help the cursed spirit worm eat all the apples!</p>
+
+        <div class="overview-layout">
+            <!-- LEFT SIDE: TEXT -->
+            <div class="overview-text">
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <p>Toji's cursed spirit worm is very hungry! He hasn't eaten since Toji left him.</p>
+                <p>Help the cursed spirit worm eat all the apples!</p>
+            </div>
+
+            <div class="how-to-play">
+                <h3>How to Play</h3>
+                <p>★ Press Play to start</p>
+                <p>★ Use your WASD keys to move up, down, left, right.</p>
+                <p>★ The worm can go through walls.</p>
+                <p>★ The only catch is, <strong>you can't eat yourself.</strong></p>
+            </div>
         </div>
-        <img src="assets/tojinworm-removebg-preview.png">
-        <div class="how-to-play">
-            <h3>How to Play</h3>
-            <p>★ Press Play to start</p>
-            <p>★ Use your WASD keys to move up, down, left, right.</p>
-            <p>★ The worm can go through walls.</p>
-            <p>★ The only catch is, <strong>you can't eat yourself.</strong></p>
-        </div>
+
+            <!-- RIGHT SIDE: IMAGE -->
+            <div class="overview-image">
+                <img src="assets/tojinworm-removebg-preview.png" alt="Spirit Worm">
+            </div>
         </div>
     </div>
 
     <div class="game-container">
-    <div class="game-wrapper-outer">
-        <div class="game-wrapper">
-            <canvas width="400" height="400" id="game"></canvas>
-            <div id="scoreboard">Score: 0</div>
-        </div>    
-    </div>
+        <div class="game-wrapper-outer">
+            <div class="game-wrapper">
+                <canvas width="400" height="400" id="game"></canvas>
+                <div id="scoreboard">Score: 0</div>
+            </div>    
+        </div>
         <button id="playBtn">Play</button>
+    </div>
     </div>
 
     <footer>

@@ -1,35 +1,113 @@
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    min-height: 100vh;
-    align-items: center;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
-  header {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    height: 225px;
-    font-family: 'Sekuya', sans-serif;
-    font-size: 30px;
-    background-image: url(../assets/headerbg/bg5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-shadow: 4px 4px 8px #000000;
-  }
+/* HEADER */
+header {
+  margin: 25px 0;
+  height: 225px;
+  font-family: 'Sekuya', sans-serif;
+  font-size: 30px;
+  background-image: url(../assets/headerbg/bg5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 4px 4px 8px #000;
+}
 
+/* GAME SECTION */
+.game-sect {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.game-section, .game-sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.game-overview {
+  flex: 0 0 600px;
+  background-color: rgb(243, 246, 232);
+  color: #2c262f;
+  border: 3px solid #baa35e;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.game-overview h2 {
+  text-align: center;
+  font-family: 'Rubik Iso', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* INSTRUCTIONS AND OVERVIEW */
+.overview-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.overview-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Comic Relief', sans-serif;
+}
+
+.overview-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-image img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  transform: translateY(80px);
+}
+
+.instructions, .how-to-play {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  border: 1.5px solid #c4944c;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9eece;
+}
+
+.instructions h3, .how-to-play h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+/* GAME BOX AND CONTROLS */
 .game-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
-  padding: 20px 0;
+  height: auto;
 }
 
 .game-wrapper-outer {
@@ -38,109 +116,41 @@
 }
 
 .game-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    transform: scale(1.02);
-    transform-origin: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-  canvas {
-    margin-left: 95px;
-    border: 5px solid white;
-    display: block;
-  }
-
-  footer {
-  height: 80px;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: auto;
-  font: 'Comic-Relief', sans-serif;
-  }
-
-#playBtn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
+canvas {
+  border: 5px solid white;
+  display: block;
 }
 
 #scoreboard {
-    font-size: 20px;
-    margin-top: 10px;
-    font-weight: bold;
-    color: white;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
-h2 {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-bottom: 0;
-  padding: auto;
-  padding-bottom: 0;
-  text-align: center;
-  font-family: 'Rubik Iso', sans-serif;
-  font-size: 2rem;
-}
-
-.game-overview {
-  margin: auto;
-  padding: 5px;
-  max-width: 1200px;
-  height: 325px;
-  background-color: rgb(243, 246, 232);
-  color:#2c262f;
-  border: 3px solid #baa35e;
-  border-radius: 12px;
-}
-
-.overview {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin: 0;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  font-family: 'Comic-Relief', sans-serif;
-}
-
-.overview img {
-  width: 200px;
-  height: auto;
-  margin: 0px;
-  padding: 5px;
-}
-
-.instructions, .how-to-play {
-  height: 200px;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  border: 1.5px solid #c4944c;
+#playBtn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 18px;
   border-radius: 8px;
-  padding: 15px;
-  margin: auto;
-  background-color:#f9eece; 
+  border: none;
+  cursor: pointer;
 }
 
-.instructions {
-  width:40%;
-  margin-left: 10px;
+footer {
+  height: 80px;
+  text-align: center;
+  font-family: 'Comic Relief', sans-serif;
+  margin-top: 40px;
 }
 
-.how-to-play {
-  width:40%;
-  margin-right: 10px;
-}
-
-.rubik-iso-regular {
-  font-family: "Rubik Iso", system-ui;
-  font-weight: 400;
-  font-style: normal;
+.comic-relief-regular {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }

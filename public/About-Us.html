@@ -5,21 +5,161 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Rubik+Iso&family=Sekuya&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/favicon.png">
-    
-    <style>
-        .home-lenk{
-            margin-right:auto;
-        }
 
-        header {
-            margin: auto;
-            height: 50vh;
-        }
+    <style>
+          *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  header {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 225px;
+    font-family: 'Sekuya', sans-serif;
+    font-size: 30px;
+    background-image: url(../assets/headerbg/bg5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 4px 4px 8px #000000;
+  }
+
+.game-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 20px 0;
+}
+
+.game-wrapper-outer {
+  display: flex;
+  justify-content: center;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    transform: scale(1.02);
+    transform-origin: top center;
+}
+
+  canvas {
+    margin-left: 95px;
+    border: 5px solid white;
+    display: block;
+  }
+
+  footer {
+  height: 80px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: auto;
+  font: 'Comic-Relief', sans-serif;
+  }
+
+#playBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#scoreboard {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 0;
+  padding: auto;
+  padding-bottom: 0;
+  text-align: center;
+  font-family: 'Rubik Iso', sans-serif;
+  font-size: 2rem;
+}
+
+.game-overview {
+  margin: auto;
+  padding: 5px;
+  max-width: 1200px;
+  height: 325px;
+  background-color: rgb(243, 246, 232);
+  color:#2c262f;
+  border: 3px solid #baa35e;
+  border-radius: 12px;
+}
+
+.overview {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: 'Comic-Relief', sans-serif;
+}
+
+.overview img {
+  width: 200px;
+  height: auto;
+  margin: 0px;
+  padding: 5px;
+}
+
+.instructions, .how-to-play {
+  height: 200px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  border: 1.5px solid #c4944c;
+  border-radius: 8px;
+  padding: 15px;
+  margin: auto;
+  background-color:#f9eece; 
+}
+
+.instructions {
+  width:40%;
+  margin-left: 10px;
+}
+
+.how-to-play {
+  width:40%;
+  margin-right: 10px;
+}
+
+.rubik-iso-regular {
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
     </style>
 </head>
 <body>
+
     <nav>
         <a href="../index.html" class = "home-lenk">Home 🏠︎</a>
         <a href="Lore-and-Timeline.html">Lore and Timeline</a>
@@ -31,6 +171,35 @@
     <header>
         <h1>About Us</h1>
     </header>
+
+    <div class="game-overview">
+        <h2>The Very Hungry Spirit Worm</h2>
+        <div class="overview">
+        <div class="instructions">
+            <h3>Instructions</h3>
+            <p>Toji's cursed spirit worm is very hungry! He hasn't eaten since Toji left him.</p>
+            <p>Help the cursed spirit worm eat all the apples!</p>
+        </div>
+        <img src="assets/tojinworm-removebg-preview.png">
+        <div class="how-to-play">
+            <h3>How to Play</h3>
+            <p>★ Press Play to start</p>
+            <p>★ Use your WASD keys to move up, down, left, right.</p>
+            <p>★ The worm can go through walls.</p>
+            <p>★ The only catch is, <strong>you can't eat yourself.</strong></p>
+        </div>
+        </div>
+    </div>
+
+    <div class="game-container">
+    <div class="game-wrapper-outer">
+        <div class="game-wrapper">
+            <canvas width="400" height="400" id="game"></canvas>
+            <div id="scoreboard">Score: 0</div>
+        </div>    
+    </div>
+        <button id="playBtn">Play</button>
+    </div>
 
     <footer>
         <p>© 2025 C. Carpiso, T. Salandanan</p>
