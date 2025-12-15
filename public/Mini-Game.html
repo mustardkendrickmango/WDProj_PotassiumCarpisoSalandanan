@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jujutsu Chronicles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mini-games.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Rubik+Iso&family=Sekuya&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class = "home-lenk">Home 🏠︎</a>
+        <a href="Lore-and-Timeline.html">Lore and Timeline</a>
+        <a href="Characters.html">Characters</a>
+        <a href="Mini-Game.html">Mini Games</a>
+        <a href="About-Us.html">About Us</a>
+    </nav>
+
+    <header>
+        <h1>Mini Game</h1>
+    </header>
+
+    <div class="game-overview">
+        <h2>The Very Hungry Spirit Worm</h2>
+        <div class="overview">
+        <div class="instructions">
+            <h3>Instructions</h3>
+            <p>Toji's cursed spirit worm is very hungry! He hasn't eaten since Toji left him.</p>
+            <p>Help the cursed spirit worm eat all the apples!</p>
+        </div>
+        <img src="assets/tojinworm-removebg-preview.png">
+        <div class="how-to-play">
+            <h3>How to Play</h3>
+            <p>★ Press Play to start</p>
+            <p>★ Use your WASD keys to move up, down, left, right.</p>
+            <p>★ The worm can go through walls.</p>
+            <p>★ The only catch is, <strong>you can't eat yourself.</strong></p>
+        </div>
+        </div>
+    </div>
+
+    <div class="game-container">
+    <div class="game-wrapper-outer">
+        <div class="game-wrapper">
+            <canvas width="400" height="400" id="game"></canvas>
+            <div id="scoreboard">Score: 0</div>
+        </div>    
+    </div>
+        <button id="playBtn">Play</button>
+    </div>
+
+    <footer>
+        <p>© 2025 C. Carpiso, T. Salandanan</p>
+        <a href="sources.html">Sources</a>
+    </footer>
+
+    <script src="javascript/snake.js"></script>
+</body>
+</html>

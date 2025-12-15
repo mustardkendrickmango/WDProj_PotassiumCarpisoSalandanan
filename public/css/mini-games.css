@@ -13,10 +13,15 @@
   }
 
   header {
-          margin: auto;
-          margin-top: 80px;
-          margin-bottom: 30px;
-          height: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 225px;
+    font-family: 'Sekuya', sans-serif;
+    font-size: 30px;
+    background-image: url(../assets/headerbg/bg5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 4px 4px 8px #000000;
   }
 
 .game-container {
@@ -69,4 +74,73 @@
     margin-top: 10px;
     font-weight: bold;
     color: white;
+}
+
+h2 {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 0;
+  padding: auto;
+  padding-bottom: 0;
+  text-align: center;
+  font-family: 'Rubik Iso', sans-serif;
+  font-size: 2rem;
+}
+
+.game-overview {
+  margin: auto;
+  padding: 5px;
+  max-width: 1200px;
+  height: 325px;
+  background-color: rgb(243, 246, 232);
+  color:#2c262f;
+  border: 3px solid #baa35e;
+  border-radius: 12px;
+}
+
+.overview {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: 'Comic-Relief', sans-serif;
+}
+
+.overview img {
+  width: 200px;
+  height: auto;
+  margin: 0px;
+  padding: 5px;
+}
+
+.instructions, .how-to-play {
+  height: 200px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  border: 1.5px solid #c4944c;
+  border-radius: 8px;
+  padding: 15px;
+  margin: auto;
+  background-color:#f9eece; 
+}
+
+.instructions {
+  width:40%;
+  margin-left: 10px;
+}
+
+.how-to-play {
+  width:40%;
+  margin-right: 10px;
+}
+
+.rubik-iso-regular {
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }

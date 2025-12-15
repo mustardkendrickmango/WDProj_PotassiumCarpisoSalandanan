@@ -68,7 +68,7 @@ function loop() {
   context.fillStyle = 'red';
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
 
-  context.fillStyle = '#662b61';
+  context.fillStyle = '#c443c4ff';
   snake.cells.forEach(function(cell, index) {
     context.fillRect(cell.x, cell.y, grid-1, grid-1);
 

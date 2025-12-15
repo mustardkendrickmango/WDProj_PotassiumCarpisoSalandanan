@@ -1,4 +1,4 @@
-            * {
+             * {
                 box-sizing: border-box;
             }
 
@@ -25,15 +25,19 @@
             }
 
             main {
-                flex: 1;
+                    flex: 1;
             }
 
             header {
-                margin-top: 40px;
-                margin-bottom: 20px;
-                height: 60px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                height: 225px;
                 font-family: 'Sekuya', sans-serif;
                 font-size: 30px;
+                background-image: url(../assets/headerbg/bg6.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-shadow: 4px 4px 8px #000000
             }
 
             .page-container {
@@ -95,7 +99,7 @@
                 border-radius: 4px;
             }
 
-            .id-details {
+            .id-details {   
                 flex: 1;
             }
 
