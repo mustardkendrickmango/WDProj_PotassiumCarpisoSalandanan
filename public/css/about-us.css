@@ -103,28 +103,6 @@ header {
   flex-direction: row;
   gap: 20px;
   padding-right: 10px;
-}
-
-.overview-text {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-family: 'Comic Relief', sans-serif;
-}
-
-.overview-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overview-image img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  transform: translateY(80px);
 }   
 
 footer {
@@ -140,3 +118,58 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
+
+.profile2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.other-info {
+  margin-top: 30px;
+}
+
+.socials {
+  width: 250px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.socials h3 {
+  text-align: center;
+  margin:0;
+  padding: 0;
+}
+
+table{
+        border-collapse: separate;
+        overflow: hidden;
+        margin: 15px auto;
+        margin-top: 5px;
+        width: 200px;
+        table-layout: auto;
+        z-index: 1;
+    }
+
+    td,th{
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 17.50px;
+        background-color:#ed7aae;
+        color: #ffeff1;
+    }
+
+    td a {
+      text-decoration: none;
+      color: #ffeff1;
+    }
+
+    td a:hover {
+      text-shadow: #623237;
+      transform: 2px 2px 4px #9d7d7d;
+    }
+
+    table.center{
+        margin-left: auto;
+        margin-right: auto;
+    }
