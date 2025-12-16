@@ -155,13 +155,13 @@ table{
         border-radius: 10px;
         text-align: center;
         font-size: 17.50px;
-        background-color:#ed7aae;
-        color: #ffeff1;
+        background-color:#f4b1cf;
+        color: #382d2e;
     }
 
     td a {
       text-decoration: none;
-      color: #ffeff1;
+      color: #382d2e;
     }
 
     td a:hover {

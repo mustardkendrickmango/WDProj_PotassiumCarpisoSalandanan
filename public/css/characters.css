@@ -78,3 +78,10 @@
             margin-top: auto;
             font: 'Comic-Relief', sans-serif;
         }
+
+        p {
+            text-align: center;
+            justify-content: center;
+            font-family: 'Comic Relief', sans-serif;
+            font-size: 20px;
+        }

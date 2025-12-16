@@ -1,0 +1,26 @@
+        header {
+            margin: auto;
+            margin-top: 25px;
+            margin-bottom: 30px;
+            height: 225px;
+            background-image: url(../assets/headerbg/bg3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+.sources {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 22px;
+    font-family: 'Comic Relief', sans-serif;
+}
+
+footer {
+    position: fixed;
+    height: 80px;
+    text-align: center;
+    font-family: 'Comic Relief', sans-serif;
+    margin-top: 40px;
+}
