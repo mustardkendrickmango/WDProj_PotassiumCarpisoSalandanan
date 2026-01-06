@@ -1,3 +1,20 @@
+# Q3 Proposal update
+
+## Final title: Jujutsu Chronicles
+
+## Features:
+    1. Formatting is readable on mobile
+    2. Improve CSS
+    3. Make the Mini Game work on mobile
+
+## Details:
+    1. Quiz/form about the information in the website
+
+## Done:
+    1. When the features have been resolved. 
+  
+
+
 # **CS3 Project Proposal**
 
 ### Project Title: Jujutsu Chronicles
