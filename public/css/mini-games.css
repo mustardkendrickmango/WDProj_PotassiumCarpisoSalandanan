@@ -42,7 +42,8 @@ header {
   padding: 0 20px;
 }
 
-.game-overview {
+.game-overview, .game-overview1, .game-overview2 {
+  width: 16vh;
   flex: 0 0 600px;
   background-color: rgb(243, 246, 232);
   color: #2c262f;
@@ -51,7 +52,7 @@ header {
   padding: 20px;
 }
 
-.game-overview h2 {
+.game-overview, .game-overview1, .game-overview2 h2 {
   text-align: center;
   font-family: 'Rubik Iso', sans-serif;
   font-size: 2rem;
@@ -94,6 +95,7 @@ header {
   border-radius: 8px;
   padding: 15px;
   background-color: #f9eece;
+  text-align: left;
 }
 
 .instructions h3, .how-to-play h3 {
@@ -143,6 +145,7 @@ canvas {
 }
 
 footer {
+  position:fixed;
   height: 80px;
   text-align: center;
   font-family: 'Comic Relief', sans-serif;
