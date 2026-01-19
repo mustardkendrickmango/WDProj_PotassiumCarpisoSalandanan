@@ -32,15 +32,17 @@ header {
   padding: 0 20px;
 }
 
-.game-section, .game-sect {
+.game-section{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   max-width: 1400px;
   margin: 40px auto;
   padding: 0 20px;
 }
+
+
 
 .game-overview {
   flex: 0 0 600px;
@@ -126,6 +128,9 @@ canvas {
   border: 5px solid white;
   display: block;
   touch-action: none;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 #scoreboard {
@@ -157,16 +162,14 @@ footer {
 }
 
 @media (max-width: 900px) {
-.game-sect {
+  .game-sect {
     flex-direction: column;
     align-items: center;
-    gap: 25px;
   }
 
   .game-overview {
-    flex: none;
     width: 100%;
-    max-width:600 px;
+    max-width: 600px;
   }
 
   .overview-layout {
@@ -177,5 +180,11 @@ footer {
   .overview-image img {
     transform: none;
     max-width: 180px;
+  }
+
+  header {
+    height: auto;
+    padding: 20px;
+    text-align: center;
   }
 }
