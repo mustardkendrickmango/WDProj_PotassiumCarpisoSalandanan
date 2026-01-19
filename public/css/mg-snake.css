@@ -128,8 +128,8 @@ canvas {
   border: 5px solid white;
   display: block;
   touch-action: none;
-  width: 100%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 350px;
   height: auto;
 }
 
@@ -165,21 +165,23 @@ footer {
   .game-sect {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .game-overview {
-    width: 100%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 400px;
   }
 
   .overview-layout {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
 
   .overview-image img {
     transform: none;
-    max-width: 180px;
+    max-width: 150px;
   }
 
   header {
