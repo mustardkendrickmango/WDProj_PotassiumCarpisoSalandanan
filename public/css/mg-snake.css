@@ -32,15 +32,17 @@ header {
   padding: 0 20px;
 }
 
-.game-section, .game-sect {
+.game-section{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   max-width: 1400px;
   margin: 40px auto;
   padding: 0 20px;
 }
+
+
 
 .game-overview {
   flex: 0 0 600px;
@@ -125,6 +127,10 @@ header {
 canvas {
   border: 5px solid white;
   display: block;
+  touch-action: none;
+  width: 90%;
+  max-width: 350px;
+  height: auto;
 }
 
 #scoreboard {
@@ -153,4 +159,34 @@ footer {
     font-family: "Comic Relief", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+
+@media (max-width: 900px) {
+  .game-sect {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .game-overview {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .overview-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .overview-image img {
+    transform: none;
+    max-width: 150px;
+  }
+
+  header {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
 }

@@ -114,6 +114,41 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
+let sx, sy;
+
+canvas.addEventListener("touchstart", e => {
+  sx = e.touches[0].clientX;
+  sy = e.touches[0].clientY;
+});
+
+canvas.addEventListener("touchend", e => {
+  if (!running) return;
+
+  let ex = e.changedTouches[0].clientX;
+  let ey = e.changedTouches[0].clientY;
+
+  let dx = ex - sx;
+  let dy = ey - sy;
+
+  if (Math.abs(dx) > Math.abs(dy)) {
+    if (dx > 0 && snake.dx === 0) { snake.dx = grid; snake.dy = 0; }
+    else if (dx < 0 && snake.dx === 0) { snake.dx = -grid; snake.dy = 0; }
+  } else {
+    if (dy > 0 && snake.dy === 0) { snake.dy = grid; snake.dx = 0; }
+    else if (dy < 0 && snake.dy === 0) { snake.dy = -grid; snake.dx = 0; }
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
 
 document.getElementById("playBtn").addEventListener("click", function() {
   resetGame();
