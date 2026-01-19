@@ -125,6 +125,7 @@ header {
 canvas {
   border: 5px solid white;
   display: block;
+  touch-action: none;
 }
 
 #scoreboard {
@@ -153,4 +154,28 @@ footer {
     font-family: "Comic Relief", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+
+@media (max-width: 900px) {
+.game-sect {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .game-overview {
+    flex: none;
+    width: 100%;
+    max-width:600 px;
+  }
+
+  .overview-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overview-image img {
+    transform: none;
+    max-width: 180px;
+  }
 }
