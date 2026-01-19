@@ -80,7 +80,15 @@ header {
   color: rgb(75, 32, 32);
   display: flex;
   flex-direction: column;
-}
+  box-shadow: 0 0 40px #908a93;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  }
+
+  .chiara:hover, .teo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #322c36;
+    backdrop-filter:blur(10px);
+   }
 
 .chiara img, .teo img {
   width: 170px;

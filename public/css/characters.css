@@ -10,6 +10,8 @@
 
         .characters {
             margin: 60px auto;
+            margin-top: 30px;
+            
             width: 1000px;
             padding: 30px;
             display: flex;
