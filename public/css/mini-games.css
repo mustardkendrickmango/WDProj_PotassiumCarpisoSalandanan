@@ -155,6 +155,7 @@ canvas {
 
 /* FOOTER */
 footer {
+  position:fixed;
   margin-top: 60px;
   padding: 20px 0;
   text-align: center;

@@ -128,8 +128,7 @@ canvas {
   border: 5px solid white;
   display: block;
   touch-action: none;
-  width: 90%;
-  max-width: 350px;
+  width: 400PX;
   height: auto;
 }
 
