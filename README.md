@@ -1,3 +1,16 @@
+# FINAL MODIFICATION PROPOSAL
+
+### Local Storage CRUD Usage
+    * CRUD will be used on our local storage data by making a new page with a link to watch all currently exisitng Jujutsu Kaisen episodes and where you can rate said episodes that you have watched. You can rate an episode out of 10 stars and also put your thoughts/comments on it. You can go back to this, update, and delete it.
+
+### Wireframes
+     ![Wireframe1](/public/assets/1.png)
+     ![Wireframe2](/public/assets/2.png)
+
+     (if pictures wont load): https://www.canva.com/design/DAHEe6PFjwU/FQLO0Z8Qxl5zLkMVAZrdLQ/edit?utm_content=DAHEe6PFjwU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
+
 # Q3 Proposal update
 
 ## Final title: Jujutsu Chronicles
