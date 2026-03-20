@@ -7,7 +7,8 @@
      ![Wireframe1](/public/assets/1.png)
      ![Wireframe2](/public/assets/2.png)
 
-     (if pictures wont load): https://www.canva.com/design/DAHEe6PFjwU/FQLO0Z8Qxl5zLkMVAZrdLQ/edit?utm_content=DAHEe6PFjwU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+     If pictures wont load:
+     [Wireframe Link](https://www.canva.com/design/DAHEe6PFjwU/FQLO0Z8Qxl5zLkMVAZrdLQ/edit?utm_content=DAHEe6PFjwU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 
