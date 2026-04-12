@@ -3,13 +3,14 @@
     <meta charset="UTF-8">
     <title>Jujutsu Chronicles</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sources.css">
+    <link rel="stylesheet" href="css/episodes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Rubik+Iso&family=Sekuya&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
+
     <nav>
         <a href="../index.html" class = "home-lenk">Home 🏠︎</a>
         <a href="Lore-and-Timeline.html">Lore and Timeline</a>
@@ -20,18 +21,22 @@
     </nav>
 
     <header>
-        <h1>Sources</h1>
+        <h1>Episodes</h1>
     </header>
 
-    <div class="sources">
-        <p>Special thanks to:</p>
-        <p>w3schools.com</p>
-        <p>pinterest.com</p>
-        <p>github.com</p>
-        <p>jujutsu-kaisen.fandom.com</p>
-            
-    </div>
+    <div class="main-sect">
+        <h4>Jujutsu Kaisen</h4>
+        <h2>Episode List</h2>
 
+        <select id="seasonSelect" onchange="loadEpisodes()">
+            <option value="season1">Season 1</option>
+            <option value="season2">Season 2</option>
+            <option value="season3">Season 3</option>
+        </select>
+
+        <div class="epContainer"></div>
+    </div>
+    
     <footer>
         <p>© 2025 Yogurt Studios</p>
         <a href="sources.html">Sources</a>
