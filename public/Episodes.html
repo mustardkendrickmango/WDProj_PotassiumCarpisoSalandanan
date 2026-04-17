@@ -8,98 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Rubik+Iso&family=Sekuya&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/favicon.png">
-
-    <style>
-        main{
-            width: 600px;
-            flex: 1;
-            margin: 50px auto;
-        }
-
-        form{
-            background: rgba(248, 241, 243, 0.599);
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
-        }
-
-        fieldset{
-            border: none;
-        }
-
-        legend{
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        label{
-            display: block;
-            margin-top: 10px;
-            width: 475px;
-        }
-
-        input, select{
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-
-        button{
-            margin-top: 15px;
-            width: 100%;
-            padding: 10px;
-            background-color: #598e9a;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 15px;
-            cursor: pointer;
-        }
-
-        button:hover{
-            background-color: #f7a5cd;
-        }
-
-        .stars{
-            margin-top: 5px;
-        }
-
-        .star{
-            font-size: 22px;
-            cursor: pointer;
-            color: lightgray;
-        }   
-        
-        .star.active{
-            color: gold;
-        }
-
-        h2{
-            margin-top: 20px;
-        }
-
-        .movie{
-            background: #eeeeee;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-        }
-
-        .list {
-            background: rgba(248, 241, 243, 0.599);
-            padding: 10px;
-            border-radius: 8px;
-        }
-
-        .starRating{
-            color: gold;
-        }
-    </style>
 </head>
 <body>
 
@@ -125,7 +33,7 @@
                 <div class="rate">
                 <label>
                     Season:
-                    <select id="season" required>
+                    <select id="season" required onchange="updateEpisode()">
                         <option value="" disabled selected>Select Season</option>
                         <option value="1">Season 1</option>
                         <option value="2">Season 2</option>
@@ -151,29 +59,24 @@
                     <span class="star" data-value="3">★</span>
                     <span class="star" data-value="4">★</span>
                     <span class="star" data-value="5">★</span>
-                    <span class="star" data-value="6">★</span>
-                    <span class="star" data-value="7">★</span>
-                    <span class="star" data-value="8">★</span>
-                    <span class="star" data-value="9">★</span>
-                    <span class="star" data-value="10">★</span>
                 </div>
                 </div>
 
                 <label>
-                    Notes / Comments:
-                    <input type="text" id="title" required onblur="checkEmpty(this)">
+                    Comments:
+                    <textarea id="comments" required onblur="checkEmpty(this)" placeholder="Write your comments here!"></textarea>
                 </label>
 
             </fieldset>
 
-            <button type="button" onclick="addMovie()">Add Rating   </button>
+            <button type="button" onclick="addRating()">Add Rating</button>
         </form>
 
         <br>
 
         <div class="list">
-        <h2>Movie List</h2>
-        <div class="movieList"></div>
+        <h2>Your Ratings</h2>
+        <div class="epRatings"></div>
         </div>
     </main>
     
@@ -181,5 +84,7 @@
         <p>© 2025 Yogurt Studios</p>
         <a href="sources.html">Sources</a>
     </footer>
+
+    <script src="javascript/ratings.js"></script>
 </body>
 </html>
