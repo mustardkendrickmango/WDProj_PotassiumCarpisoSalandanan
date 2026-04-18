@@ -19,13 +19,27 @@ body {
 }
 
 nav {
-    font-family:Arial, Helvetica, sans-serif;
+    /*font-family:Arial, Helvetica, sans-serif;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(26, 2, 2, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.15);
+    border-bottom: 1px solid #5a0000;*/
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* IMPORTANT FIX */
     align-items: center;
     padding: 18px 40px;
     background: rgba(26, 2, 2, 0.9);
