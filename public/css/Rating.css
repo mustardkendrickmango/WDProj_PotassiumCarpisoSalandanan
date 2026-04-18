@@ -1,0 +1,213 @@
+header {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 225px;
+    background-image: url(../assets/headerbg/bg7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background: #060b1d;
+    color: #f5eaea;
+    font-family: 'Sekuya', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 225px;
+    font-family: 'Sekuya', sans-serif;
+    font-size: 30px;
+    background-image: url(assets/headerbg/bg7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 4px 4px 8px #000000
+}
+
+main {
+    width: 600px;
+    margin: 50px auto;
+}
+
+form {
+    background: #3b0505;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.2);
+    border: 1px solid #5a0000;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 28px;
+    text-align: center;
+    font-family: Sekuya, sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #c94d4d,
+             0 0 10px #c94d4d,
+             0 0 20px #c94d4d;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e0bcbc;
+}
+
+input, select, textarea {
+    width: 100%;
+    background: #1a0000;
+    color: #fff;
+    border: 1px solid #800000;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 76px;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+}
+
+select:disabled {
+    opacity: 0.5;
+}
+
+.stars {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 48px;
+    color: #782121;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.star:hover {
+    transform: scale(1.2);
+}
+
+.star.active {
+    color: #f5263e;
+    text-shadow: 0 0 8px #f5263e;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background: #a00000;
+    border: none;
+    border-radius: 12px;
+    font-family: Sekuya,sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #9f0826;
+    box-shadow: 0 0 15px rgb(107, 42, 42);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #800000;
+    margin: 30px 0;
+}
+
+.list {
+    background: #3b0505;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.2);
+    border: 1px solid #5a0000; 
+}
+
+.list h2 {
+    text-align: center;
+    font-family: Sekuya, sans-serif;
+    text-shadow: 0 0 5px #c94d4d,
+             0 0 10px #c94d4d,
+             0 0 20px #c94d4d;
+}
+
+.episode-log-item {
+    display:flex;
+    flex-direction:column;
+    background: #2a0000;
+    border-left: 5px solid rgb(255, 0, 68);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(255,0,0,0.1);
+    transition: 0.2s;
+}
+
+.episode-log-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255,0,0,0.3);
+}
+
+.episode-log-item h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.log-stars {
+    color: red;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.log-notes {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #ccc;
+}
+
+.delete-log {
+    position: static;   /* puts it back into normal flow */
+    margin-top: 10px;   /* spacing under comment */
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.delete-log:hover {
+    background: rgb(150, 11, 11);
+    color: white;
+}
+
+footer {
+            margin-bottom: 0;
+            margin-top: auto;
+            font: 'Comic-Relief', sans-serif;
+}
