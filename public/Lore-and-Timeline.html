@@ -5,120 +5,12 @@
     <title>Jujutsu Chronicles</title>
 
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/timeline.css">
     <link rel="icon" type="image/png" href="assets/favicon.png"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Sekuya&display=swap"/>
-
-    <style>
-      header {
-            margin: auto;
-            margin-top: 25px;
-            margin-bottom: 30px;
-            height: 225px;
-            background-image: url(assets/headerbg/bg4.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-      }
-
-      body {
-        font-family: "Comic Relief", sans-serif;
-      }
-
-      .home-lenk {
-        margin-right: auto;
-      }
-
-      /* ---------- ACCORDION ---------- */
-
-      .accordion {
-        margin: 20px auto;
-        width: 75em;
-        background: #1b1b1b;
-        border: 2px solid #858585;
-        border-radius: 8px;
-      }
-
-      .accordion-trigger {
-        width: 100%;
-        padding: 1em 1.5em;
-        background: none;
-        color: white;
-        border: none;
-        font-size: 1rem;
-        text-align: left;
-        cursor: pointer;
-        position: relative;
-      }
-
-      .accordion-trigger:hover {
-        background: #343434;
-      }
-
-      .accordion-icon {
-        position: absolute;
-        right: 2em;
-        top: 50%;
-        width: 0.5rem;
-        height: 0.5rem;
-        border: solid currentcolor;
-        border-width: 0 2px 2px 0;
-        transform: translateY(-50%) rotate(45deg);
-      }
-
-      .accordion-trigger[aria-expanded="true"] .accordion-icon {
-        transform: translateY(-50%) rotate(-135deg);
-      }
-
-      .accordion-panel {
-        padding: 1.5em;
-        color: white;
-      }
-
-      .accordion-panel[hidden] {
-        display: none;
-      }
-
-      /* ---------- SLIDER ---------- */
-
-      .slider {
-        position: relative;
-        max-width: 600px;
-        margin: 20px auto;
-        overflow: hidden;
-      }
-
-      .slides img {
-        display: none;
-        width: 100%;
-        border-radius: 8px;
-      }
-
-      .slides img.active {
-        display: block;
-      }
-
-      .slider button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-        border: none;
-        padding: 10px 14px;
-        cursor: pointer;
-        font-size: 18px;
-      }
-
-      .slider .prev {
-        left: 10px;
-      }
-
-      .slider .next {
-        right: 10px;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Comic+Relief:wght@400;700&family=Rubik+Iso&family=Sekuya&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -127,6 +19,7 @@
         <a href="Lore-and-Timeline.html">Lore and Timeline</a>
         <a href="Character.html">Characters</a>
         <a href="Mini-Game.html">Mini Games</a>
+        <a href="Episodes.html">Episodes</a>
         <a href="About-Us.html">About Us</a>
     </nav>
 
@@ -144,7 +37,7 @@
             </button>
         </h3>
         <div id="sect1" class="accordion-panel" role="region" aria-labelledby="acc1" hidden>
-          <p><strong>Identifier:</strong> Hidden Inventory Arc</p>
+          <p><strong>Hidden Inventory Arc</strong></p>
           <div class="slider">
             <button class="prev">❮</button>
             <div class="slides">
@@ -155,9 +48,19 @@
                 <img src="assets/hiddeninventoryslider/hiddeninventory5.jpg" alt="hidden inventory image 5">
             </div>
             <button class="next">❯</button>
-          </div>
+          </div>        
+          <div class ="synopsis">
+          <p>The Gojo's Past Arc is the fifth arc in Gege Akutami's Jujutsu Kaisen. In the anime adaptation, the arc is referred as Hidden Inventory / Premature Death Arc. It follows Satoru Gojo and Suguru Geto during the year 2006, when they were second-year students at Tokyo Jujutsu High. During the arc, they are assigned to escort the Star Plasma Vessel to Master Tengen as curse user groups conspire against them.</p>
         </div>
+
+
+        </div>
+
+
+
       </div>
+        
+
 
       <!-- 2 -->
         <div class="accordion">
@@ -168,7 +71,7 @@
             </button>
         </h3>
         <div id="sect2" class="accordion-panel" role="region" aria-labelledby="acc2" hidden>
-          <p><strong>Identifier:</strong> Cursed Child Arc</p>
+          <p><strong>Cursed Child Arc</strong></p>
           <div class="slider">
             <button class="prev">❮</button>
             <div class="slides">
@@ -180,6 +83,9 @@
             </div>
             <button class="next">❯</button>
           </div>
+          <div class ="synopsis">
+          <p>The Cursed Child Arc is the zeroth story arc which covers Gege Akutami's Jujutsu Kaisen 0: Jujutsu High prequel series. It follows Yuta Okkotsu as he enrolls in Tokyo Jujutsu High and seeks to unravel the curse on his childhood friend, Rika Orimoto.</p>
+        </div>
         </div>
       </div>
 
@@ -192,7 +98,7 @@
             </button>
         </h3>
         <div id="sect3" class="accordion-panel" role="region" aria-labelledby="acc3" hidden>
-          <p><strong>Identifier:</strong> Fearsome Womb Arc</p>
+          <p><strong>Fearsome Womb Arc</strong></p>
           <div class="slider">
             <button class="prev">❮</button>
             <div class="slides">
@@ -203,7 +109,10 @@
                 <img src="assets/fearsomewombslider/fearsomewomb5.jpg" alt="fearsome womb image 5"/>
             </div>
             <button class="next">❯</button>
-          </div>
+        </div>
+          <div class ="synopsis">
+          <p>The Fearsome Womb Arc is the first story arc in Gege Akutami's Jujutsu Kaisen. It follows Yuji Itadori as he's thrust into the jujutsu world after becoming Sukuna's vessel.</p>
+        </div>
         </div>
       </div>
 
@@ -216,7 +125,7 @@
           </button>
         </h3>
         <div id="sect4" class="accordion-panel" role="region" aria-labelledby="acc4" hidden>
-            <p><strong>Identifier:</strong> Vs. Mahito Arc</p>
+            <p><strong>Vs. Mahito Arc</strong></p>
             <div class="slider">
                 <button class="prev">❮</button>
                 <div class="slides">
@@ -228,6 +137,9 @@
                 </div>
             <button class="next">❯</button>
           </div>
+          <div class ="synopsis">
+          <p>The Vs. Mahito Arc follows Yuji and grade 1 sorcerer, Kento Nanami as they investigate Mahito's trail of transfigured human corpses. Mahito involves a disheartened young man named Junpei Yoshino, leading him down a dark path.</p>
+        </div>
         </div>
       </div>
 
@@ -240,7 +152,7 @@
             </button>
         </h3>
         <div id="sect5" class="accordion-panel" role="region" aria-labelledby="acc" hidden>
-          <p><strong>Identifier:</strong> Shibuya Incident Arc</p>
+          <p><strong>Shibuya Incident Arc</strong></p>
           <div class="slider">
             <button class="prev">❮</button>
             <div class="slides">
@@ -254,30 +166,22 @@
             </div>
             <button class="next">❯</button>
           </div>
+          <div class ="synopsis">
+          <p>The Shibuya Incident Arc follows the entirety of the Shibuya Incident on October 31, 2018. The alliance between cursed spirits and curse users forged by Mahito and Pseudo-Geto finally makes their move to seal Satoru Gojo.</p>
+        </div>
         </div>
       </div>
 
       <!-- 6 -->
       <div class="accordion">
         <h3>
-          <button
-            class="accordion-trigger"
-            aria-expanded="false"
-            aria-controls="sect6"
-            id="acc6"
-          >
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="sect6" id="acc6">
             ITADORI'S EXTERMINATION ARC
             <span class="accordion-icon"></span>
           </button>
         </h3>
-        <div
-          id="sect6"
-          class="accordion-panel"
-          role="region"
-          aria-labelledby="acc6"
-          hidden
-        >
-          <p><strong>Identifier:</strong> Itadori’s Extermination Arc</p>
+        <div id="sect6" class="accordion-panel" role="region" aria-labelledby="acc6" hidden>
+          <p><strong>Itadori's Extermination Arc</strong></p>
           <div class="slider">
             <button class="prev">❮</button>
             <div class="slides">
@@ -289,66 +193,51 @@
             </div>
             <button class="next">❯</button>
           </div>
+          <div class ="synopsis">
+          <p>The Itadori's Extermination Arc follows the immediate aftermath of the Shibuya Incident where Yuji Itadori's execution has been reinstated by the higher-ups. Without the protection of Satoru Gojo, Yuji is targeted by Gojo's former student Yuta Okkotsu, and his extermination is seemingly all but assured.</p>
+        </div>
         </div>
       </div>
 
       <!-- 7 -->
       <div class="accordion">
         <h3>
-          <button
-            class="accordion-trigger"
-            aria-expanded="false"
-            aria-controls="sect7"
-            id="acc7"
-          >
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="sect7" id="acc7">
             PERFECT PREPARATION ARC
             <span class="accordion-icon"></span>
           </button>
         </h3>
-        <div
-          id="sect7"
-          class="accordion-panel"
-          role="region"
-          aria-labelledby="acc7"
-          hidden
-        >
-          <p><strong>Identifier:</strong> Perfect Preparation Arc</p>
+        <div id="sect7" class="accordion-panel" role="region" aria-labelledby="acc7" hidden>
+          <p><strong>Perfect Preparation Arc</strong></p>
           <div class="slider">
             <button class="prev">❮</button>
             <div class="slides">
-              <img src="assets/perfectpreparationslider/amonster.png" class="active" alt="Arc 7 image 1" />
-              <img src="assets/perfectpreparationslider/maki.png" alt="Arc 7 image 2" />
-              <img src="assets/perfectpreparationslider/HAKARIII.png" alt="Arc 7 image 3" />
-              <img src="assets/perfectpreparationslider/yaga.png" alt="Arc 7 image 4" />
-              <img src="assets/perfectpreparationslider/yuji.png" alt="Arc 7 image 5" />
-              <img src="assets/perfectpreparationslider/tengen.png" alt="Arc 7 image 5" />
+              <img src="assets/perfectpreparationslider/perfectpreparation.jpg" class="active" alt="Arc 7 image 1" />
+              <img src="assets/perfectpreparationslider/amonster.png" alt="Arc 7 image 2" />
+              <img src="assets/perfectpreparationslider/maki.png" alt="Arc 7 image 3" />
+              <img src="assets/perfectpreparationslider/HAKARIII.png" alt="Arc 7 image 4" />
+              <img src="assets/perfectpreparationslider/yaga.png" alt="Arc 7 image 5" />
+              <img src="assets/perfectpreparationslider/yuji.png" alt="Arc 7 image 6" />
+              <img src="assets/perfectpreparationslider/tengen.png" alt="Arc 7 image 7" />
             </div>
             <button class="next">❯</button>
           </div>
+          <div class ="synopsis">
+          <p>The Perfect Preparation Arc follows the Tokyo Jujutsu High students and their allies as they continue to deal with the fallout from the Shibuya Incident on top of preparing for Kenjaku's next great act of jujutsu terrorism: the Culling Game.</p>
+        </div>
         </div>
       </div>
 
       <!-- 8 -->
       <div class="accordion">
         <h3>
-          <button
-            class="accordion-trigger"
-            aria-expanded="false"
-            aria-controls="sect8"
-            id="acc8"
-          >
+          <button class="accordion-trigger" ria-expanded="false" aria-controls="sect8" id="acc8">
             CULLING GAME ARC
             <span class="accordion-icon"></span>
           </button>
         </h3>
-        <div
-          id="sect8"
-          class="accordion-panel"
-          role="region"
-          aria-labelledby="acc8"
-          hidden
-        >
-          <p><strong>Identifier:</strong> Culling Game Arc</p>
+        <div id="sect8" class="accordion-panel" role="region" aria-labelledby="acc8" hidden>
+          <p><strong>Culling Game Arc</strong></p>
           <div class="slider">
             <button class="prev">❮</button>
             <div class="slides">
@@ -367,30 +256,22 @@
             </div>
             <button class="next">❯</button>
           </div>
+          <div class ="synopsis">
+          <p>The Culling Games Arc follows Yuji Itadori, Megumi Fushiguro, and their allies as they enter the Culling Game with the intention of rescuing Tsumiki Fushiguro from participating, freeing Satoru Gojo from Prison Realm, and protecting Tengen from Kenjaku. <p>
+        </div>
         </div>
       </div>
 
       <!-- 9 -->
       <div class="accordion">
         <h3>
-          <button
-            class="accordion-trigger"
-            aria-expanded="false"
-            aria-controls="sect9"
-            id="acc9"
-          >
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="sect9" id="acc9">
             SHINJUKU SHOWDOWN ARC
             <span class="accordion-icon"></span>
           </button>
         </h3>
-        <div
-          id="sect9"
-          class="accordion-panel"
-          role="region"
-          aria-labelledby="acc9"
-          hidden
-        >
-          <p><strong>Identifier:</strong> Shinjuku Showdown Arc</p>
+        <div id="sect9" class="accordion-panel" role="region" aria-labelledby="acc9" hidden>
+          <p><strong>Shinjuku Showdown Arc</strong></p>
           <div class="slider">
             <button class="prev">❮</button>
             <div class="slides">
@@ -407,68 +288,18 @@
             </div>
             <button class="next">❯</button>
           </div>
+          <div class ="synopsis">
+          <p>The Shinjuku Showdown Arc follows the last climatic clash between the jujutsu sorcerers and the King of Curses, Ryomen Sukuna.<p>
+        </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <p>© 2025 C. Carpiso, T. Salandanan</p>
+      <p>© 2025 Yogurt Studios</p>
       <a href="sources.html">Sources</a>
     </footer>
 
-    <script>
-"use strict";
-
-/* ACCORDION */
-document.querySelectorAll(".accordion h3").forEach((header) => {
-  const button = header.querySelector("button");
-  const panel = document.getElementById(
-    button.getAttribute("aria-controls")
-  );
-
-  button.addEventListener("click", () => {
-    const expanded = button.getAttribute("aria-expanded") === "true";
-
-    if (expanded) {
-      button.setAttribute("aria-expanded", "false");
-      panel.setAttribute("hidden", "");
-    } else {
-      button.setAttribute("aria-expanded", "true");
-      panel.removeAttribute("hidden");
-
-      // Initialize slider when accordion opens
-      const slider = panel.querySelector(".slider");
-      if (slider) {
-        const slides = slider.querySelectorAll("img");
-        slides.forEach((img) => img.classList.remove("active"));
-        if (slides.length > 0) slides[0].classList.add("active");
-      }
-    }
-  });
-});
-
-/* SLIDER */
-document.querySelectorAll(".slider").forEach((slider) => {
-  let index = 0;
-  const slides = slider.querySelectorAll("img");
-  const prev = slider.querySelector(".prev");
-  const next = slider.querySelector(".next");
-
-  function showSlide(i) {
-    slides.forEach((img) => img.classList.remove("active"));
-    slides[i].classList.add("active");
-  }
-
-  prev.addEventListener("click", () => {
-    index = index === 0 ? slides.length - 1 : index - 1;
-    showSlide(index);
-  });
-
-  next.addEventListener("click", () => {
-    index = index === slides.length - 1 ? 0 : index + 1;
-    showSlide(index);
-  });
-});
-    </script>
+    <script src="javascript/timeline.js"></script>
   </body>
 </html>

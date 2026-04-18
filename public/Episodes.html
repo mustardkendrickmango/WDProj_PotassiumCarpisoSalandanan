@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jujutsu Chronicles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/episodes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Rubik+Iso&family=Sekuya&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class = "home-lenk">Home 🏠︎</a>
+        <a href="Lore-and-Timeline.html">Lore and Timeline</a>
+        <a href="Character.html">Characters</a>
+        <a href="Mini-Game.html">Mini Games</a>
+        <a href="Episodes.html">Episodes</a>
+        <a href="About-Us.html">About Us</a>
+    </nav>
+
+    <header>
+        <h1>Episodes</h1>
+    </header>
+
+    <main>
+        <form id="signupForm" method="post" onsubmit="return handleSubmit(event)" onreset="return confirmReset()">
+
+            <fieldset>
+                <legend>Rate an Episode</legend>
+
+                <div class="rate">
+                <label>
+                    Season:
+                    <select id="season" required onchange="updateEpisode()">
+                        <option value="" disabled selected>Select Season</option>
+                        <option value="1">Season 1</option>
+                        <option value="2">Season 2</option>
+                        <option value="3">Season 3</option>
+                    </select>
+                </label>
+                </div>
+
+                <div class="rate">
+                <label>
+                    Genre:
+                    <select id="episode" disabled>
+                        <option value="" disabled selected>Select a Season first!</option>
+                    </select>
+                </label>
+                </div>
+
+                <div class="rate">
+                <label>Rating:</label>
+                <div class="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                </div>
+
+                <label>
+                    Comments:
+                    <textarea id="comments" required onblur="checkEmpty(this)" placeholder="Write your comments here!"></textarea>
+                </label>
+
+            </fieldset>
+
+            <button type="button" onclick="addRating()">Add Rating</button>
+        </form>
+
+        <br>
+
+        <div class="list">
+        <h2>Your Ratings</h2>
+        <div class="epRatings"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Yogurt Studios</p>
+        <a href="sources.html">Sources</a>
+    </footer>
+
+    <script src="javascript/ratings.js"></script>
+</body>
+</html>

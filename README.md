@@ -1,3 +1,34 @@
+# FINAL MODIFICATION PROPOSAL
+
+### Local Storage CRUD Usage
+    * CRUD will be used on our local storage data by making a new page with a link to watch all currently exisitng Jujutsu Kaisen episodes and where you can rate said episodes that you have watched. You can rate an episode out of 10 stars and also put your thoughts/comments on it. You can go back to this, update, and delete it.
+
+### Wireframes
+     ![Wireframe1](/public/assets/1.png)
+     ![Wireframe2](/public/assets/2.png)
+
+     If pictures wont load:
+     [Wireframe Link](https://www.canva.com/design/DAHEe6PFjwU/FQLO0Z8Qxl5zLkMVAZrdLQ/edit?utm_content=DAHEe6PFjwU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+
+
+# Q3 Proposal update
+
+## Final title: Jujutsu Chronicles
+
+## Features:
+    1. Formatting is readable on mobile
+    2. Improve CSS
+    3. Make the Mini Game work on mobile
+
+## Details:
+    1. Quiz/form about the information in the website
+
+## Done:
+    1. When the features have been resolved. 
+  
+
+
 # **CS3 Project Proposal**
 
 ### Project Title: Jujutsu Chronicles
