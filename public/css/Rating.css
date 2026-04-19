@@ -1,12 +1,12 @@
-header {
+ header {
     margin: auto;
     margin-top: 25px;
     margin-bottom: 30px;
     height: 225px;
     background-image: url(../assets/headerbg/bg7.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    background-size: cover; 
+ }
 
 body {
     background: #060b1d;
@@ -16,7 +16,7 @@ body {
     padding: 0;
 }
 
-header {
+/* header {
     margin-top: 25px;
     margin-bottom: 25px;
     height: 225px;
@@ -26,7 +26,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 4px 4px 8px #000000
-}
+} */
 
 main {
     width: 600px;
